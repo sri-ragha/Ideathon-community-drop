@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Hubs from "./pages/Hubs";
 import RegisterHub from "./pages/RegisterHub";
 import TrackPackage from "./pages/TrackPackage";
+import QRScannerPage from "./pages/QRScanner";
 import PartnerDashboard from "./pages/PartnerDashboard";
 import NotFound from "./pages/NotFound";
 
@@ -29,6 +30,7 @@ const App = () => (
               <Route path="/hubs" element={<Hubs />} />
               <Route path="/register-hub" element={<RegisterHub />} />
               <Route path="/track" element={<TrackPackage />} />
+              <Route path="/scanner" element={<QRScannerPage />} />
               <Route path="/dashboard" element={<PartnerDashboard />} />
               <Route path="*" element={<NotFound />} />
             </Routes>

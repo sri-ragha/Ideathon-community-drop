@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
@@ -30,6 +30,20 @@ const TrackPackage = () => {
   const [trackingInfo, setTrackingInfo] = useState<TrackingInfo | null>(null);
   const [loading, setLoading] = useState(false);
   const [showQRScanner, setShowQRScanner] = useState(false);
+
+  // Check for code parameter in URL
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    if (code) {
+      setTrackingNumber(code);
+      // Auto-track if code is provided
+      setTimeout(() => {
+        const info = mockTrackingData[code];
+        setTrackingInfo(info || null);
+      }, 500);
+    }
+  }, []);
 
   // Mock tracking data
   const mockTrackingData: Record<string, TrackingInfo> = {
