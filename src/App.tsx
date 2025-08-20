@@ -12,6 +12,7 @@ import RegisterHub from "./pages/RegisterHub";
 import TrackPackage from "./pages/TrackPackage";
 import QRScannerPage from "./pages/QRScanner";
 import PartnerDashboard from "./pages/PartnerDashboard";
+import Support from "./pages/Support";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
               <Route path="/track" element={<TrackPackage />} />
               <Route path="/scanner" element={<QRScannerPage />} />
               <Route path="/dashboard" element={<PartnerDashboard />} />
+              <Route path="/support" element={<Support />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
