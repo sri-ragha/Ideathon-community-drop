@@ -57,6 +57,90 @@ const Hubs = () => {
       capacity: 15,
       amenities: ['Personal Service', 'Flexible Hours'],
       distance: 0.8
+    },
+    {
+      id: '4',
+      name: 'Tech Campus Store',
+      type: 'shop',
+      address: '321 Innovation Dr, Tech Park',
+      position: [40.7450, -73.9900],
+      rating: 4.7,
+      operatingHours: '8:00 AM - 9:00 PM',
+      capacity: 75,
+      amenities: ['Student Discount', 'Tech Support', 'Free WiFi'],
+      distance: 0.5
+    },
+    {
+      id: '5',
+      name: 'Express Logistics Center',
+      type: 'warehouse',
+      address: '789 Freight Way, Industrial Zone',
+      position: [40.7650, -73.9750],
+      rating: 4.5,
+      operatingHours: '5:00 AM - 11:00 PM',
+      capacity: 500,
+      amenities: ['Express Processing', 'Forklift Service', 'Temperature Control'],
+      distance: 2.1
+    },
+    {
+      id: '6',
+      name: 'Maria\'s Corner Store',
+      type: 'shop',
+      address: '456 Oak Street, Suburban Area',
+      position: [40.7350, -73.9950],
+      rating: 4.4,
+      operatingHours: '6:00 AM - 10:00 PM',
+      capacity: 30,
+      amenities: ['Local Business', 'Friendly Service', 'Convenient Location'],
+      distance: 0.9
+    },
+    {
+      id: '7',
+      name: 'John\'s Home Office',
+      type: 'home',
+      address: '567 Maple Ave, Quiet Neighborhood',
+      position: [40.7200, -73.9800],
+      rating: 4.9,
+      operatingHours: '8:00 AM - 8:00 PM',
+      capacity: 20,
+      amenities: ['Home Office', 'Pet Friendly', 'Flexible Pickup'],
+      distance: 1.5
+    },
+    {
+      id: '8',
+      name: 'Mega Distribution Hub',
+      type: 'warehouse',
+      address: '999 Logistics Blvd, Port Area',
+      position: [40.7800, -73.9700],
+      rating: 4.3,
+      operatingHours: '24/7',
+      capacity: 1000,
+      amenities: ['24/7 Access', 'Bulk Storage', 'International Shipping'],
+      distance: 3.2
+    },
+    {
+      id: '9',
+      name: 'Campus Bookstore',
+      type: 'shop',
+      address: '111 University Blvd, College Town',
+      position: [40.7550, -73.9850],
+      rating: 4.6,
+      operatingHours: '9:00 AM - 7:00 PM',
+      capacity: 60,
+      amenities: ['Student ID Required', 'Textbook Exchange', 'Study Space'],
+      distance: 0.7
+    },
+    {
+      id: '10',
+      name: 'Lisa\'s Community Hub',
+      type: 'home',
+      address: '222 Community Circle, Family Area',
+      position: [40.7300, -73.9900],
+      rating: 4.8,
+      operatingHours: '7:00 AM - 9:00 PM',
+      capacity: 25,
+      amenities: ['Family Friendly', 'Play Area', 'Community Events'],
+      distance: 1.1
     }
   ]);
 
